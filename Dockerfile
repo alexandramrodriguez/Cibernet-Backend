@@ -15,7 +15,7 @@ FROM eclipse-temurin:17-jdk
 WORKDIR /app
 
 # Copiamos el JAR generado en la etapa de build
-COPY --from=builder /app/target/*.jar app.jar
+COPY --from=builder /app/target/CibernetBackendJava-0.0.1-SNAPSHOT.jar app.jar
 
 # Puerto que expone la aplicación
 EXPOSE 8080

@@ -3,7 +3,7 @@ services:
     name: cibernet-backend
     runtime: docker
     plan: free
-    region: oregon
+    dockerfilePath: ./Dockerfile
     envVars:
       - key: SPRING_PROFILES_ACTIVE
         value: dev
